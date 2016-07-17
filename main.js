@@ -14,7 +14,8 @@ window.onload = function() {
 
 	function render(){
 		context.clearRect(0,0,width,height)
-		for(var h=0;h<height;h+=250){
+		for(var h=0;h<height;h+=height/3){
+			
 			for(var x=0;x<width;x+=17){
 				var y = h+Math.sin(s)*50
 				var ang = Math.atan2(x-dx, y-dy)
